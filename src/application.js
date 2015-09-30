@@ -13,6 +13,8 @@ $( document ).ready(function(){
 
   $("#down").click(function(){
     $("#temp").text(thermostat.decrease_temp());
+    thermostat._change_display();
+    $("#display_colour").text(thermostat.colour);
   });
 
   $('#power_save').change(function() {
