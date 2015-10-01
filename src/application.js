@@ -2,19 +2,23 @@ $( document ).ready(function(){
   thermostat = new Thermostat();
   power = new Power();
 
+  var update = function() {
+    thermostat._change_display();
+    $("#temp").attr("style","color:"+ thermostat.colour);
+  }
+    update();
+
   $("#temp").text(thermostat.temperature);
   $("#display_colour").text(thermostat.colour);
 
   $("#up").click(function(){
     $("#temp").text(thermostat.increase_temp(power));
-    thermostat._change_display();
-    $("#display_colour").text(thermostat.colour);
+    update()
   });
 
   $("#down").click(function(){
     $("#temp").text(thermostat.decrease_temp());
-    thermostat._change_display();
-    $("#display_colour").text(thermostat.colour);
+    update();
   });
 
   $('#power_save').change(function() {

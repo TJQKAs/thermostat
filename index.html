@@ -3,22 +3,26 @@
 <head>
       <meta charset="utf-8">
       <title>Demo</title>
+      <script src="jquery.js"></script>
+      <script src="src/application.js"></script>
+      <script src="src/Power.js"></script>
+      <script src="src/Thermostat.js"></script>
+      <link rel="stylesheet" href="public/css/bootstrap.css"/>
   </head>
-  <body>
-    <script src="jquery.js"></script>
-    <script src="src/application.js"></script>
-    <script src="src/Power.js"></script>
-    <script src="src/Thermostat.js"></script>
+   <body class="col-md-6 col-md-offset-3">
 
-    <div id="temp">
-      ??temp
+
+    <div style = "font-size: 120px">
+
+      <p id="temp"></p>
+
     </div>
 
     <!-- <input id="up" type="button" value="Increase Temperature"> -->
-    <a href="#" id="up"> Increase Temperature </a>
+    <button type="button" class="btn btn-danger" id="up"> Increase Temperature </button>
 
     <!-- <input id="down" type="button" value="Decrease Temperature"> -->
-    <a href="#" id="down"> Decrease Temperature </a>
+    <button type="button" class="btn btn-success" id="down"> Decrease Temperature </button>
 
     <form action="">
       <input type="checkbox" id="power_save" checked >Power save mode<br>
@@ -26,9 +30,7 @@
 
     <a href="#" id="reset"> Reset temperature </a>
 
-    <div id="display_colour">
-      ??colour
-    </div>
+
 
     <script>
 
