@@ -9,6 +9,7 @@ $( document ).ready(function(){
     update();
 
   $("#temp").text(thermostat.temperature);
+
   $("#display_colour").text(thermostat.colour);
 
   $("#up").click(function(){
