@@ -13,17 +13,19 @@
   </head>
 
    <body class="col-md-6 col-md-offset-3">
-    <div style = "font-size: 120px">
-      <p id="temp"></p>
-    </div>
+     <div id = 'tempwithc'>
+       <p style = 'font-size:120px'>
+         <span id="temp"></span>&deg;C
+       </p>
+     </div>
     <!-- <input id="up" type="button" value="Increase Temperature"> -->
-    <button type="button" class="btn btn-danger" id="up"> Increase Temperature </button>
+     <button type="button" class="btn btn-danger" id="up"> Increase Temperature </button>
     <!-- <input id="down" type="button" value="Decrease Temperature"> -->
-    <button type="button" class="btn btn-success" id="down"> Decrease Temperature </button>
-    <form action="">
+     <button type="button" class="btn btn-success" id="down"> Decrease Temperature </button>
+     <form action="">
       <input type="checkbox" id="power_save" checked >Power save mode<br>
-    </form>
-    <button type="button" class="btn btn-primary" id="reset"> Reset temperature </button>
+     </form>
+     <button type="button" class="btn btn-primary" id="reset"> Reset temperature </button>
 
     <div>
   <form id="weather_status_form">
@@ -34,8 +36,14 @@
     <input type="radio" id="units_imperial" name="units" value="imperial"/> Imperial</br>
     <button type="submit">Change</button>
   </form>
+
+
+   <div style = "font-size: 25px">
   <p id="weather_description"></p>
+  <p>City: <span id="weather_name"></span></p>
   <p>Temperature: <span id="weather_temp"></span></p>
+
+
   <!-- <p>Wind speed: <span id="weather_wind"></span></p> -->
     </div>
 

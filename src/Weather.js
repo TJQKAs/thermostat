@@ -1,6 +1,6 @@
 
   $(document).ready(function() {
-    $('#weather_city').val('London'),
+    // $('#weather_city').val('London'),
     $('#units_metric').attr('checked', 'checked');
     processForm();
   });
@@ -22,10 +22,12 @@
        weathername = data.name;
        console.log(weathertemp);
        console.log(weathername);
+       console.log(urlCity);
+       console.log(pathArray);
        $('#weather').html(data.main.temp - 273.15 + data.name);
-
+       $("#weather_name").text(weathername);
        $("#weather_temp").text(weathertemp);
-       update();
+      //  update();
 
 
      }

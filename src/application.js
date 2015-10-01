@@ -4,7 +4,7 @@ $( document ).ready(function(){
 
   var update = function() {
     thermostat._change_display();
-    $("#temp").attr("style","color:"+ thermostat.colour);
+    $("#tempwithc").attr("style","color:"+ thermostat.colour);
   }
     update();
 
