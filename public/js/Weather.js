@@ -11,7 +11,7 @@
   function processForm() {
     // Fetch the data from the public API through JSONP.
     // See http://openweathermap.org/API#weather.
-    var pathArray = window.location.search;
+   var pathArray = window.location.search;
    var urlCity = pathArray.replace('?city=', '').replace('&Submit=Submit', '');
    var weathertemp;
    var weathername;
